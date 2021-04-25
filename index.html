@@ -4,10 +4,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DPD</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <div class="modal" id="modal-step-one">
+        <div class="modal__content box__info">
+            <h3 class="modal__title">Данные о доставке</h3>
+            <p class="modal__description">Чтобы узнать информация о посылке - введите её номер в поле ниже</p>
+            <div class="modal__search">
+                <span class="modal__search-icon"><svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.245 0C5.045 0 0 5.043 0 11.241c0 6.198 5.044 11.24 11.245 11.24 6.2 0 11.244-5.042 11.244-11.24S17.445 0 11.245 0zm0 20.634c-5.184 0-9.402-4.214-9.402-9.393 0-5.18 4.218-9.393 9.402-9.393 5.183 0 9.4 4.213 9.4 9.393 0 5.18-4.216 9.393-9.4 9.393z" fill="#D30032"/><path d="M25.228 23.921l-6.052-6.036a.92.92 0 0 0-1.304.003.926.926 0 0 0 .004 1.307l6.052 6.036a.918.918 0 0 0 1.304-.003.926.926 0 0 0-.004-1.307z" fill="#D30032"/></svg></span>
+                <input class="modal__search-input" type="number">
+            </div>
+            <a class="modal__button button" href="#">Дальше <span class="button--next_icon"><svg width="23" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip1)"><path opacity=".75" d="M2.116 5.297h13.817c.64 0 1.158.346 1.158.773 0 .427-.519.773-1.158.773H2.116c-.64 0-1.158-.346-1.158-.773 0-.427.519-.773 1.158-.773z" fill="#fff"/><mask id="a" maskUnits="userSpaceOnUse" x="15" y="0" width="8" height="12"><path d="M15.683 12V.14h6.922V12h-6.922z" fill="#fff"/></mask><g mask="url(#a)"><path d="M16.233.14c.103 0 .204.04.293.119l5.822 5.156c.16.143.258.389.258.655s-.098.512-.258.655l-5.822 5.156a.418.418 0 0 1-.559.022c-.176-.136-.284-.395-.284-.676V.913c0-.281.108-.54.284-.676a.429.429 0 0 1 .266-.097z" fill="#fff"/></g></g><defs><clipPath id="clip1"><path fill="#fff" transform="rotate(-90 6.479 5.521)" d="M0 0h11.858v21.651H0z"/></clipPath></defs></svg></a>
+            <a class="modal__link" href="#">Вернуться назад</a>
+        </div>
+    </div>
+    <div class="modal" id="modal-step-two">
+        <div class="modal__content box__info">
+            <h3 class="modal__title">Данные о доставке <span class="red">№5000315</span></h3>
+            <p class="modal__description">Посылка №5000315 уже находится на пути в Москву!</p>
+            <div class="swipe">
+                <div class="swipe__item">
+                    <h4 class="swipe__item-title">Общая информация</h4>
+                    <div class="swipe__item-info">
+                        <div class="swipe__item-info_element">
+                            <h5 class="swipe__item-info_name">Имя Фамилия</h5>
+                            <span class="swipe__item-info_text">Тест Тест</span>
+                        </div>
+                        <div class="swipe__item-info_element">
+                            <h5 class="swipe__item-info_name">Город отправления</h5>
+                            <span class="swipe__item-info_text">Москва</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swipe__item">
+                    <h4 class="swipe__item-title">Данные получателя</h4>
+                    <div class="swipe__item-info">
+                        <div class="swipe__item-info_element">
+                            <h5 class="swipe__item-info_name">Имя Фамилия</h5>
+                            <span class="swipe__item-info_text">Тест Тест</span>
+                        </div>
+                        <div class="swipe__item-info_element">
+                            <h5 class="swipe__item-info_name">Город отправления</h5>
+                            <span class="swipe__item-info_text">Москва</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swipe__item">
+                    <h4 class="swipe__item-title">Данные отправителя</h4>
+                    <div class="swipe__item-info">
+                        <div class="swipe__item-info_element">
+                            <h5 class="swipe__item-info_name">Имя Фамилия</h5>
+                            <span class="swipe__item-info_text">Тест Тест</span>
+                        </div>
+                        <div class="swipe__item-info_element">
+                            <h5 class="swipe__item-info_name">Город отправления</h5>
+                            <span class="swipe__item-info_text">Москва</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="modal__button button" href="#">Оплатить</a>
+            <a class="modal__link" href="#">Вернуться назад</a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#"><img src="./assets/img/logo.svg" alt="logo"></a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link active" href="/">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#uslugi">Услуги</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#delivery">Данные о доставке</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="hero box">
+        <div class="container">
+            <div class="hero__inner box__inner">
+                <div class="hero__info box__info">
+                    <h2 class="hero__title title">Доверьте cвои посылки доставке <span class="red">№1</span> в Польше!</h2>
+                    <div class="hero__plus">
+                        <div class="hero__plus-item">
+                            <span class="hero__plus-icon"><svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M18.722 2.802a.95.95 0 0 0-1.344 0L5.997 14.183 1.622 9.808a.95.95 0 0 0-1.344 1.344l5.047 5.046a.95.95 0 0 0 1.343 0L18.722 4.145a.95.95 0 0 0 0-1.343z" fill="#D30032"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h19v19H0z"/></clipPath></defs></svg></span>
+                            <span class="hero__plus-text">Повседневная практика показывает, что сложившаяся</span>
+                        </div>
+                        <div class="hero__plus-item">
+                            <span class="hero__plus-icon"><svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M18.722 2.802a.95.95 0 0 0-1.344 0L5.997 14.183 1.622 9.808a.95.95 0 0 0-1.344 1.344l5.047 5.046a.95.95 0 0 0 1.343 0L18.722 4.145a.95.95 0 0 0 0-1.343z" fill="#D30032"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h19v19H0z"/></clipPath></defs></svg></span>
+                            <span class="hero__plus-text">Равным образом новая модель организационной</span>
+                        </div>
+                        <div class="hero__plus-item">
+                            <span class="hero__plus-icon"><svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M18.722 2.802a.95.95 0 0 0-1.344 0L5.997 14.183 1.622 9.808a.95.95 0 0 0-1.344 1.344l5.047 5.046a.95.95 0 0 0 1.343 0L18.722 4.145a.95.95 0 0 0 0-1.343z" fill="#D30032"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h19v19H0z"/></clipPath></defs></svg></span>
+                            <span class="hero__plus-text">Таким образом дальнейшее развитие различных форм</span>
+                        </div>
+                        <div class="hero__plus-item">
+                            <span class="hero__plus-icon"><svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M18.722 2.802a.95.95 0 0 0-1.344 0L5.997 14.183 1.622 9.808a.95.95 0 0 0-1.344 1.344l5.047 5.046a.95.95 0 0 0 1.343 0L18.722 4.145a.95.95 0 0 0 0-1.343z" fill="#D30032"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h19v19H0z"/></clipPath></defs></svg></span>
+                            <span class="hero__plus-text">Задача организации, в особенности же укрепление</span>
+                        </div>
+                    </div>
+                    <div class="hero__controls">
+                        <a class="hero__button button" href="#">Начать <span class="button--next_icon"><svg width="23" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip1)"><path opacity=".75" d="M2.116 5.297h13.817c.64 0 1.158.346 1.158.773 0 .427-.519.773-1.158.773H2.116c-.64 0-1.158-.346-1.158-.773 0-.427.519-.773 1.158-.773z" fill="#fff"/><mask id="a" maskUnits="userSpaceOnUse" x="15" y="0" width="8" height="12"><path d="M15.683 12V.14h6.922V12h-6.922z" fill="#fff"/></mask><g mask="url(#a)"><path d="M16.233.14c.103 0 .204.04.293.119l5.822 5.156c.16.143.258.389.258.655s-.098.512-.258.655l-5.822 5.156a.418.418 0 0 1-.559.022c-.176-.136-.284-.395-.284-.676V.913c0-.281.108-.54.284-.676a.429.429 0 0 1 .266-.097z" fill="#fff"/></g></g><defs><clipPath id="clip1"><path fill="#fff" transform="rotate(-90 6.479 5.521)" d="M0 0h11.858v21.651H0z"/></clipPath></defs></svg></a>
+                        <a class="hero__link" href="#">Узнать подробнее</a>
+                    </div>
+                </div>
+                <picture><img src="./assets/img/hero.png" alt="hero-image" class="hero__image"></picture>
+            </div>
+        </div>
+    </div>
+    <div class="delivery box">
+        <div class="container">
+            <div class="delivery__inner box__inner">
+                <div class="delivery__info box__info">
+                    <h2 class="delivery__title title">Данные о доставке</h2>
+                    <p class="delivery__description">Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке.</p>
+                    <a class="delivery__button button" href="#">Найти посылку</a>
+                </div>
+                <picture><img src="./assets/img/delivery.png" alt=""></picture>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="container">
+            <div class="faq__inner">
+                <h2 class="faq__title title">У Вас есть вопросы?</h2>
+                <div class="swipe">
+                    <div class="swipe__item">
+                        <h4 class="swipe__item-title">Могу ли я перенаправить посылку без регистрации?</h4>
+                        <div class="swipe__item-info">
+                            <p class="swipe__description">С другой стороны сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+                        </div>
+                    </div>
+                    <div class="swipe__item">
+                        <h4 class="swipe__item-title">Могу ли я перенаправить посылку без регистрации?</h4>
+                        <div class="swipe__item-info">
+                            <p class="swipe__description">С другой стороны сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+                        </div>
+                    </div>
+                    <div class="swipe__item">
+                        <h4 class="swipe__item-title">Могу ли я перенаправить посылку без регистрации?</h4>
+                        <div class="swipe__item-info">
+                            <p class="swipe__description">С другой стороны сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+                        </div>
+                    </div>
+                    <div class="swipe__item">
+                        <h4 class="swipe__item-title">Могу ли я перенаправить посылку без регистрации?</h4>
+                        <div class="swipe__item-info">
+                            <p class="swipe__description">С другой стороны сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="logo" href="#"><img src="./assets/img/logo.svg" alt="logo"></a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="/">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#uslugi">Услуги</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#delivery">Данные о доставке</a></li>
+                        <li class="menu__item"><a class="menu__link active" href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                <span class="footer__copyright">© Все права защищены</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+        jQuery(document).ready(($) => {
+  $(".swipe__item").on("click", function () {
+    if (!$(this).hasClass("active")) {
+      $(".swipe__item.active")
+        .removeClass("active")
+        .find(".swipe__item-info")
+        .slideToggle(300);
+    }
+    $(this).toggleClass("active").find(".swipe__item-info").slideToggle(300);
+  });
+});
+
+    </script>
 </body>
 </html>
