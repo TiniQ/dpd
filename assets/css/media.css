@@ -1,0 +1,42 @@
+@media(max-width: 930px) {
+    .title {
+        text-align: center;
+    }
+    .box__info {
+        display: flex;
+    }
+    .hero__title, .about__title, .delivery__title {
+        text-align: center;
+    }
+    .hero__item {
+        justify-content: center;
+    }
+    .hero__controls, .about__button, .delivery__button {
+        margin: 0 auto;
+    }
+    .about__description, .delivery__description {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+    }
+    .box__inner {
+        flex-direction: column;
+    }
+    .hero .box__inner, .delivery .box__inner  {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 780px) {
+    .menu {
+        display: none;
+    }
+}
+@media(max-width: 450px) {
+    .hero__controls {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero__button {
+        margin-right: 0;
+    }
+}
