@@ -24,7 +24,9 @@ body {
   color: #5B5B5D;
   min-width: 320px;
 }
-
+img {
+max-width:100%;
+}
 img {
   display: block;
   max-width: 100%;
