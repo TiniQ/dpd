@@ -126,6 +126,11 @@
         margin: 0 0.5rem;
     }
 }
+@media (max-width: 395px) {
+    .swipe__title::before {
+        right: -20px;
+    }
+}
 @media (max-width: 370px) {
     .modal__content {
         padding: 2.6rem 2.7rem;
