@@ -113,6 +113,9 @@
     .swipe__title {
         font-size: 1.3rem;
     }
+    .faq .swipe__title {
+        margin-right: 1.5rem;
+    }
     .header .logo {
         margin: 0 auto;
     }
