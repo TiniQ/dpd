@@ -126,7 +126,7 @@
         margin: 0 0.5rem;
     }
 }
-@media (max-width: 395px) {
+@media (max-width: 420px) {
     .swipe__title::before {
         right: -20px;
     }
