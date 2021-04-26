@@ -16,10 +16,10 @@
             <p class="modal__description">Чтобы узнать информация о посылке - введите её номер в поле ниже</p>
             <div class="modal__search">
                 <span class="modal__search-icon"><svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.245 0C5.045 0 0 5.043 0 11.241c0 6.198 5.044 11.24 11.245 11.24 6.2 0 11.244-5.042 11.244-11.24S17.445 0 11.245 0zm0 20.634c-5.184 0-9.402-4.214-9.402-9.393 0-5.18 4.218-9.393 9.402-9.393 5.183 0 9.4 4.213 9.4 9.393 0 5.18-4.216 9.393-9.4 9.393z" fill="#D30032"/><path d="M25.228 23.921l-6.052-6.036a.92.92 0 0 0-1.304.003.926.926 0 0 0 .004 1.307l6.052 6.036a.918.918 0 0 0 1.304-.003.926.926 0 0 0-.004-1.307z" fill="#D30032"/></svg></span>
-                <input class="modal__search-input" type="number">
+                <input class="modal__search-input" type="number" maxlength="1">
             </div>
-            <a class="modal__button button button--next modal-next" href="#">Далее <span class="button--next_icon"><svg width="23" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip1)"><path opacity=".75" d="M2.116 5.297h13.817c.64 0 1.158.346 1.158.773 0 .427-.519.773-1.158.773H2.116c-.64 0-1.158-.346-1.158-.773 0-.427.519-.773 1.158-.773z" fill="#fff"/><mask id="a" maskUnits="userSpaceOnUse" x="15" y="0" width="8" height="12"><path d="M15.683 12V.14h6.922V12h-6.922z" fill="#fff"/></mask><g mask="url(#a)"><path d="M16.233.14c.103 0 .204.04.293.119l5.822 5.156c.16.143.258.389.258.655s-.098.512-.258.655l-5.822 5.156a.418.418 0 0 1-.559.022c-.176-.136-.284-.395-.284-.676V.913c0-.281.108-.54.284-.676a.429.429 0 0 1 .266-.097z" fill="#fff"/></g></g><defs><clipPath id="clip1"><path fill="#fff" transform="rotate(-90 6.479 5.521)" d="M0 0h11.858v21.651H0z"/></clipPath></defs></svg></span></a>
-            <a class="modal__link modal__exit" href="#">Вернуться назад</a>
+            <a class="modal__button button button--next modal-next reset-js" onclick="ShowModal('#modal-step-two')" href="#">Далее <span class="button--next_icon"><svg width="23" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip1)"><path opacity=".75" d="M2.116 5.297h13.817c.64 0 1.158.346 1.158.773 0 .427-.519.773-1.158.773H2.116c-.64 0-1.158-.346-1.158-.773 0-.427.519-.773 1.158-.773z" fill="#fff"/><mask id="a" maskUnits="userSpaceOnUse" x="15" y="0" width="8" height="12"><path d="M15.683 12V.14h6.922V12h-6.922z" fill="#fff"/></mask><g mask="url(#a)"><path d="M16.233.14c.103 0 .204.04.293.119l5.822 5.156c.16.143.258.389.258.655s-.098.512-.258.655l-5.822 5.156a.418.418 0 0 1-.559.022c-.176-.136-.284-.395-.284-.676V.913c0-.281.108-.54.284-.676a.429.429 0 0 1 .266-.097z" fill="#fff"/></g></g><defs><clipPath id="clip1"><path fill="#fff" transform="rotate(-90 6.479 5.521)" d="M0 0h11.858v21.651H0z"/></clipPath></defs></svg></span></a>
+            <a class="modal__link modal__exit reset-js" onclick="CloseModal('#modal-step-one')" href="#">Вернуться назад</a>
         </div>
     </div>
     <div class="modal" id="modal-step-two">
@@ -67,8 +67,8 @@
                     </div>
                 </div>
             </div>
-            <a class="modal__button button" href="#">Оплатить</a>
-            <a class="modal__link modal-back" href="#">Вернуться назад</a>
+            <a class="modal__button button" href="/oplata.html">Оплатить</a>
+            <a class="modal__link modal-back reset-js" onclick="ShowModal('#modal-step-one')" href="#">Вернуться назад</a>
         </div>
     </div>
     <header class="header">
@@ -126,7 +126,7 @@
             <div class="about__inner box__inner">
                 <picture><img class="about__image" src="./assets/img/about.png" alt="about-image"></picture>
                 <div class="about__info box__info">
-                    <h2 class="about__title">Идейные соображения высшего порядка</h2>
+                    <h2 class="about__title title">Идейные соображения высшего порядка</h2>
                     <p class="about__description">Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации новых предложений. Не следует, однако забывать, что рамки и место обучения кадров позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
                     <a class="about__button button" href="#">Подробнее</a>
                 </div>
@@ -137,9 +137,9 @@
         <div class="container">
             <div class="delivery__inner box__inner">
                 <div class="delivery__info box__info">
-                    <h2 class="delivery__title">Данные о доставке</h2>
+                    <h2 class="delivery__title title">Данные о доставке</h2>
                     <p class="delivery__description">Повседневная практика показывает, что начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке.</p>
-                    <a class="delivery__button button" href="#">Найти посылку</a>
+                    <a class="delivery__button button reset-js" onclick="ShowModal('#modal-step-one')" href="#">Найти посылку</a>
                 </div>
                 <picture><img class="delivery__image" src="./assets/img/delivery.png" alt="delivery-image"></picture>
             </div>
@@ -198,17 +198,5 @@
     </footer>
 </body>
 <script src="./assets/js/jquery-3.6.0.min.js"></script>
-<script>
-jQuery(document).ready(($) => {
-        $(".swipe__item").on("click", function () {
-            if (!$(this).hasClass("active")) {
-            $(".swipe__item.active")
-                .removeClass("active")
-                .find(".swipe__info")
-                .slideToggle(300);
-    }
-        $(this).toggleClass("active").find(".swipe__info").slideToggle(300);
-  });
-});
-</script>
+<script src="./assets/js/main.js"></script>
 </html>
