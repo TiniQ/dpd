@@ -1,0 +1,305 @@
+/* ПЕРЕМЕННЫЕ */
+$red: #D30032;
+$title: #191919;
+$light: #5B5B5D;
+$light-gray: #F2F2F2;
+$pale-red: #FFE3E3;
+$light-gray: #F2F2F2;
+$copyright: #E97F98;
+$swipe: #FFFBFB;
+$hover: #E81043;
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: $light;
+    min-width: 320px;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: $title;
+}
+.title {
+    font-size: 4.8rem;
+    line-height: 1.25;
+    max-width: 67.8rem;
+}
+a {
+    color: $red;
+    cursor: pointer;
+    text-decoration: none;
+}
+button,
+.button {
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 2.1rem 7.4rem;
+    border-radius: 1rem;
+    color: #fff;
+    background: $red;
+    &:hover {
+        box-shadow: 0rem 2.2rem 6.4rem -1.2rem rgba(211, 0, 50, 0.5);
+        background: $hover;
+    }
+}
+.button--next {
+    &_icon {
+        padding-left: 1.5rem;
+    }
+}
+.red {
+    color: $red;
+}
+.box {
+    margin-bottom: 12.5rem;
+}
+.box__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box__info {
+    display: block;
+    flex-direction: column;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1020;
+        .box__info {
+            display: flex;
+        }
+    &__content {
+        margin: 0 1rem;
+        padding: 4.6rem 7.7rem;
+        border-radius: 1.8rem;
+        background-color: #fff;
+    }
+    &__title {
+        margin-bottom: 1.8rem;
+    }
+    &__description {
+        max-width: 54.7rem;
+        margin-bottom: 2.2rem;
+    }
+    &__search {
+        position: relative;
+        height: 7.5rem;
+        width: 100%;
+        margin-bottom: 3.7rem;
+        &-icon {
+            top: calc(50% - 1.3rem);
+            left: 3.2rem;
+            position: absolute;
+        }
+        &-input {
+            height: 7.5rem;
+            width: 100%;
+            color: $red;
+            padding: 2.5rem 3.2rem 2.5rem 7.4rem;
+            border: 0.1rem solid rgba(0, 0, 0, 0.15);
+            border-radius: 1.2rem;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                display: none;
+            }
+            &::placeholder {
+                color: $red;
+            }
+            &:focus {
+                border: 0.2rem solid rgba($red, 0.6);
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3.9rem;
+    }
+    &__link {
+        text-align: center;
+    }
+    .swipe {
+        margin-bottom: 4.1rem;
+        &__item {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            &.active {
+                border-bottom: none;
+            }
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+        &__info {
+            &-item {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 1.3rem;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+                &:not(:last-child) {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+    }
+}
+.container {
+    max-width: 139.1rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+.header {
+    padding: 4.2rem 0;
+    border-bottom: 0.1rem solid $light-gray;
+    margin-bottom: 11.2rem;
+}
+.header,
+.footer {
+    font-size: 1.6rem;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin: 0 2rem;
+    }
+    &__link {
+        font-size: 1.6rem;
+        color: $light;
+    }
+}
+.hero {
+    &__title {
+        margin-bottom: 4.1rem;
+    }
+    &__plus {
+        margin-bottom: 4.1rem;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &-icon {
+            svg {
+                display: block;
+            }
+        }
+        &-text {
+            padding-left: 1.9rem;
+        }
+    }
+    &__button {
+        margin-right: 6rem;
+    }
+    &__link {
+        font-size: 1.4rem;
+    }
+}
+.about {
+    &__title {
+        margin-bottom: 5rem;
+    }
+    &__description {
+        margin-bottom: 8rem;
+        max-width: 67.1rem;
+    }
+}
+.delivery {
+    &__title {
+        margin-bottom: 3.1rem;
+    }
+    &__description {
+        max-width: 72.8rem;
+        margin-bottom: 4.1rem;
+    }
+}
+.swipe {
+    &__item {
+        &.active {
+            .swipe__title {
+                color: $red;
+                &::before {
+                    transform: rotate(-180deg);
+                    background: $red;
+                }
+            }
+        }
+    }
+    &__title {
+        position: relative;
+        transform: all .3s;
+        &::before {
+            content: '';
+            mask-image: url(../img/icons/swipe-arrow.svg);
+            width: 1.8rem;
+            height: 1rem;
+            right: 0;
+            top: calc(50% - 0.5rem);
+            background: #000;
+            position: absolute;
+            transition: all .3s;
+        }
+    }
+    &__info {
+        margin-top: 1.8rem;
+        display: none;
+    }
+}
+.faq {
+    &__title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .swipe {
+        &__item {
+            padding: 3.7rem 7.5rem;
+            margin: 1rem 0;
+            border: 0.1rem solid $light-gray;
+            border-radius: 1.8rem;
+            &.active {
+                background: $swipe;
+                border: 0.1rem solid $copyright;
+            }
+        }
+    }
+}
+.footer {
+    padding: 2.5rem 0;
+    border-top: 0.1rem solid $light-gray;
+    &__copyright {
+        color: $copyright;
+    }
+}
