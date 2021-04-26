@@ -1,0 +1,48 @@
+body {
+    background-color: #F2F2F2;
+}
+.card {
+    margin: 0 1rem;
+    max-width: 30rem;
+    box-shadow: 0px 22px 32px -12px rgba(211, 0, 50, 0.5);
+    border-radius: 2.4rem;
+    background: linear-gradient(167.6deg, rgba(211, 0, 50, 0.8) -9.78%, rgba(255, 38, 88, 0.8) 107.04%);
+    &__info {
+        padding: 7rem 3.1rem 1.5rem;
+        position: relative;
+         span {
+             display: block;
+         }
+    }
+    &__company {
+        img {
+            top: 2.6rem;
+            right: 3.1rem;
+            position: absolute;
+        }
+    }
+    &__expire {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__number {
+        margin-bottom: 3.1rem;
+    }
+    &-placeholder {
+        font-size: 1.2rem;
+        color: rgba(#F17994, 0.9);
+        line-height: 1.5rem;
+    }
+    &-value {
+        font-size: 1.8rem;
+        color: rgba(#fff, 0.9);
+    }
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
