@@ -130,7 +130,8 @@ button,
                 display: none;
             }
             &::placeholder {
-                color: $red;
+                color: rgba(211, 0, 50, 0.5);
+                font-size: 1.4rem;
             }
             &:focus {
                 border: 0.2rem solid rgba($red, 0.6);
@@ -200,6 +201,11 @@ button,
     &__link {
         font-size: 1.6rem;
         color: $light;
+        transition: all .4s;
+        &:hover,
+        &.active {
+            color: rgba($red, 0.8);
+        }
     }
 }
 .hero {
@@ -248,6 +254,7 @@ button,
 }
 .swipe {
     &__item {
+        cursor: pointer;
         &.active {
             .swipe__title {
                 color: $red;

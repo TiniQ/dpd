@@ -165,19 +165,23 @@ button:hover,
 }
 
 .modal__search-input::-webkit-input-placeholder {
-  color: #D30032;
+  color: rgba(211, 0, 50, 0.5);
+  font-size: 1.4rem;
 }
 
 .modal__search-input:-ms-input-placeholder {
-  color: #D30032;
+  color: rgba(211, 0, 50, 0.5);
+  font-size: 1.4rem;
 }
 
 .modal__search-input::-ms-input-placeholder {
-  color: #D30032;
+  color: rgba(211, 0, 50, 0.5);
+  font-size: 1.4rem;
 }
 
 .modal__search-input::placeholder {
-  color: #D30032;
+  color: rgba(211, 0, 50, 0.5);
+  font-size: 1.4rem;
 }
 
 .modal__search-input:focus {
@@ -276,6 +280,12 @@ button:hover,
 .menu__link {
   font-size: 1.6rem;
   color: #5B5B5D;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.menu__link:hover, .menu__link.active {
+  color: rgba(211, 0, 50, 0.8);
 }
 
 .hero__title {
@@ -327,6 +337,10 @@ button:hover,
 .delivery__description {
   max-width: 72.8rem;
   margin-bottom: 4.1rem;
+}
+
+.swipe__item {
+  cursor: pointer;
 }
 
 .swipe__item.active .swipe__title {

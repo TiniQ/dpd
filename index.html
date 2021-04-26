@@ -16,7 +16,7 @@
             <p class="modal__description">Чтобы узнать информация о посылке - введите её номер в поле ниже</p>
             <div class="modal__search">
                 <span class="modal__search-icon"><svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.245 0C5.045 0 0 5.043 0 11.241c0 6.198 5.044 11.24 11.245 11.24 6.2 0 11.244-5.042 11.244-11.24S17.445 0 11.245 0zm0 20.634c-5.184 0-9.402-4.214-9.402-9.393 0-5.18 4.218-9.393 9.402-9.393 5.183 0 9.4 4.213 9.4 9.393 0 5.18-4.216 9.393-9.4 9.393z" fill="#D30032"/><path d="M25.228 23.921l-6.052-6.036a.92.92 0 0 0-1.304.003.926.926 0 0 0 .004 1.307l6.052 6.036a.918.918 0 0 0 1.304-.003.926.926 0 0 0-.004-1.307z" fill="#D30032"/></svg></span>
-                <input class="modal__search-input" type="number" maxlength="1">
+                <input class="modal__search-input" type="number" placeholder="Введите номер...">
             </div>
             <a class="modal__button button button--next modal-next reset-js" onclick="ShowModal('#modal-step-two')" href="#">Далее <span class="button--next_icon"><svg width="23" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip1)"><path opacity=".75" d="M2.116 5.297h13.817c.64 0 1.158.346 1.158.773 0 .427-.519.773-1.158.773H2.116c-.64 0-1.158-.346-1.158-.773 0-.427.519-.773 1.158-.773z" fill="#fff"/><mask id="a" maskUnits="userSpaceOnUse" x="15" y="0" width="8" height="12"><path d="M15.683 12V.14h6.922V12h-6.922z" fill="#fff"/></mask><g mask="url(#a)"><path d="M16.233.14c.103 0 .204.04.293.119l5.822 5.156c.16.143.258.389.258.655s-.098.512-.258.655l-5.822 5.156a.418.418 0 0 1-.559.022c-.176-.136-.284-.395-.284-.676V.913c0-.281.108-.54.284-.676a.429.429 0 0 1 .266-.097z" fill="#fff"/></g></g><defs><clipPath id="clip1"><path fill="#fff" transform="rotate(-90 6.479 5.521)" d="M0 0h11.858v21.651H0z"/></clipPath></defs></svg></span></a>
             <a class="modal__link modal__exit reset-js" onclick="CloseModal('#modal-step-one')" href="#">Вернуться назад</a>
@@ -79,7 +79,7 @@
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+                        <li class="menu__item"><a class="menu__link active" href="#">Главная</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Данные о доставке</a></li>
@@ -93,7 +93,7 @@
         <div class="container">
             <div class="hero__inner box__inner">
                 <div class="hero__info box__info">
-                    <h2 class="hero__title title">Доверьте cвои посылки доставке №1 в Польше!                    </h2>
+                    <h2 class="hero__title title">Доверьте cвои посылки доставке <span class="red">№1</span> в Польше!</h2>
                     <div class="hero__plus">
                         <div class="hero__item">
                             <span class="hero__item-icon"><svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M18.722 2.802a.95.95 0 0 0-1.344 0L5.997 14.183 1.622 9.808a.95.95 0 0 0-1.344 1.344l5.047 5.046a.95.95 0 0 0 1.343 0L18.722 4.145a.95.95 0 0 0 0-1.343z" fill="#D30032"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h19v19H0z"/></clipPath></defs></svg></span>
@@ -189,7 +189,7 @@
                         <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Услуги</a></li>
                         <li class="menu__item"><a class="menu__link" href="#">Данные о доставке</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">FAQ</a></li>
+                        <li class="menu__item"><a class="menu__link active" href="#">FAQ</a></li>
                     </ul>
                 </nav>
                 <span class="footer__copyright">© Все данные защищены</span>
