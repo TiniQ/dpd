@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* Мониторы */
+/* Лаптопы */
+@media (max-width: 920px) {
+  .title, .description, .hero__controls {
+    text-align: center;
+  }
+  .box__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header {
+    margin-bottom: 5.2rem;
+  }
+  .hero .box__inner, .delivery .box__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero__plus-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__button, .delivery__button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 1.6rem;
+  }
+  .title {
+    font-size: 3.2rem;
+  }
+  .header,
+  .footer {
+    font-size: 1.4rem;
+  }
+  .faq .swipe__item {
+    padding: 2.7rem 3.2rem 2.7rem 3.7rem;
+  }
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .logo .logo__image {
+    margin: 1rem auto;
+  }
+  .footer .menu {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .faq .swipe__title {
+    font-size: 1.8rem;
+  }
+  .faq .swipe__description {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 605px) {
+  .header .menu__item {
+    margin: 0 1.5rem;
+  }
+  .box {
+    margin-bottom: 7.5rem;
+  }
+  .faq .swipe__item {
+    padding: 2.7rem 2.2rem 2.7rem 1.7rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .title, .hero__title {
+    font-size: 2.7rem;
+    margin-bottom: 1.5rem;
+  }
+  .faq .swipe__title {
+    font-size: 1.6rem;
+  }
+  .faq .swipe__description {
+    font-size: 1.4rem;
+  }
+  .header {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .header .logo {
+    margin: 0 auto;
+  }
+  .header .menu {
+    display: none;
+  }
+  .hero__controls {
+    display: block;
+  }
+  .hero__controls a {
+    display: block;
+  }
+  .hero__button {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .faq .swipe__title {
+    font-size: 1.4rem;
+  }
+  .faq .swipe__description {
+    font-size: 1.2rem;
+  }
+  .footer .menu__item {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .faq .swipe__item {
+    padding: 1.7rem 2.2rem 1.7rem 1.7rem;
+  }
+  .faq .swipe__title {
+    padding-right: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer {
+    font-size: 1.2rem;
+  }
+  .footer .menu__item {
+    margin: 0 0.4rem;
+  }
+}
+/*# sourceMappingURL=media.css.map */
