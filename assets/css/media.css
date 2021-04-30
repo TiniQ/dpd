@@ -1,0 +1,163 @@
+@media (max-width: 920px) {
+  .header {
+    margin-bottom: 4.2rem;
+  }
+  .hero, .about, .delivery {
+    margin-bottom: 7.5rem;
+  }
+  .hero__inner, .delivery__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero__plus-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero__controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero__button {
+    margin-right: 2rem;
+  }
+  .about__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__info, .about__info, .delivery__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  button, .button:not(.hero__button) {
+    margin: 0 auto;
+  }
+  .hero__title, .about__title, .delivery__title,
+  .hero__description, .about__description, .delivery__description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 1.6rem;
+  }
+  .header, .footer {
+    font-size: 1.4rem;
+  }
+  .menu__item {
+    margin: 0 1rem;
+  }
+  .hero__title, .about__title, .delivery__title, .faq__title {
+    font-size: 3.2rem;
+  }
+  .faq .swipe__item {
+    padding: 1.7rem 3.2rem 1.7rem 3.7rem;
+  }
+  .faq .swipe__title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 645px) {
+  button, .button {
+    padding: 1.5rem 4.4rem;
+  }
+  .hero, .about, .delivery {
+    margin-bottom: 3.5rem;
+  }
+  .hero__title, .about__title, .delivery__title, .faq__title {
+    font-size: 2.5rem;
+  }
+  .delivery__title {
+    margin-bottom: 1rem;
+  }
+  .about__description, .delivery__description {
+    margin-bottom: 1.5rem;
+  }
+  .faq__title {
+    margin-bottom: 2.3rem;
+  }
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .logo, .footer .menu {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 545px) {
+  body {
+    font-size: 1.4rem;
+  }
+  button, .button {
+    padding: 1.1rem 4.4rem;
+    font-size: 1.6rem;
+  }
+  .header {
+    font-size: 1.2rem;
+  }
+  .hero__plus-icon {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .hero__plus-text {
+    font-size: 1.3rem;
+  }
+  .hero__controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__button {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .hero .faq .swipe__description {
+    font-size: 1.3rem;
+  }
+  .menu__item {
+    margin: 0 0.5rem;
+  }
+  .faq .swipe__title {
+    font-size: 1.4rem;
+  }
+  .faq .swipe__title-icon svg {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .faq .swipe__item.active .swipe__title-icon svg {
+    -webkit-transform: scale(0.7) rotate(180deg);
+            transform: scale(0.7) rotate(180deg);
+  }
+}
+
+@media (max-width: 420px) {
+  .header .menu {
+    display: none;
+  }
+  .header .logo {
+    margin: 0 auto;
+  }
+  .footer {
+    font-size: 1.34rem;
+  }
+  .footer .menu__item {
+    margin: 0 0.21rem;
+  }
+}
+/*# sourceMappingURL=media.css.map */
